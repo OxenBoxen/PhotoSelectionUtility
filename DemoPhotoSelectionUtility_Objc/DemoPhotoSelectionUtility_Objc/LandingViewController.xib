@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController">
+            <connections>
+                <outlet property="addImageButton" destination="BYn-Og-DuG" id="ElI-y4-7Jr"/>
+                <outlet property="imageView" destination="uMs-eF-SXV" id="p8x-cx-D5a"/>
+                <outlet property="view" destination="xPv-Ab-A4D" id="feB-Yx-afb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xPv-Ab-A4D">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uMs-eF-SXV" userLabel="imageView">
+                    <rect key="frame" x="150" y="60" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="ihy-06-Caw"/>
+                        <constraint firstAttribute="width" constant="300" id="wiT-Ae-fv7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYn-Og-DuG" userLabel="addImageButton">
+                    <rect key="frame" x="225" y="150" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="De7-5j-3iD"/>
+                        <constraint firstAttribute="height" constant="150" id="UP6-Cq-QKF"/>
+                    </constraints>
+                    <state key="normal" image="plusIcon"/>
+                    <connections>
+                        <action selector="tappedAddImageButton:" destination="-1" eventType="touchUpInside" id="Kj6-k6-aXn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-Am-ZDc">
+                    <rect key="frame" x="150" y="530" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4i1-Jr-Ue3"/>
+                        <constraint firstAttribute="width" constant="300" id="RoI-pN-EXa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
+                    <state key="normal" title="Clear Image">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tappedClearImage:" destination="-1" eventType="touchUpInside" id="acP-R1-3ff"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.062745098039215685" green="0.18823529411764706" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZUp-Am-ZDc" secondAttribute="bottom" constant="20" id="4oc-AW-FcT"/>
+                <constraint firstItem="BYn-Og-DuG" firstAttribute="top" secondItem="xPv-Ab-A4D" secondAttribute="top" constant="150" id="9nF-aj-FLr"/>
+                <constraint firstItem="BYn-Og-DuG" firstAttribute="centerX" secondItem="xPv-Ab-A4D" secondAttribute="centerX" id="LKc-WT-mOc"/>
+                <constraint firstItem="ZUp-Am-ZDc" firstAttribute="centerY" secondItem="xPv-Ab-A4D" secondAttribute="centerY" id="Nhf-ge-byX"/>
+                <constraint firstItem="uMs-eF-SXV" firstAttribute="centerY" secondItem="xPv-Ab-A4D" secondAttribute="centerY" id="Xvc-ON-oyK"/>
+                <constraint firstItem="uMs-eF-SXV" firstAttribute="top" secondItem="xPv-Ab-A4D" secondAttribute="top" constant="60" id="dmg-rB-IDp"/>
+                <constraint firstItem="uMs-eF-SXV" firstAttribute="centerX" secondItem="xPv-Ab-A4D" secondAttribute="centerX" id="du9-Af-joe"/>
+                <constraint firstItem="uMs-eF-SXV" firstAttribute="centerX" secondItem="xPv-Ab-A4D" secondAttribute="centerX" id="iQ3-dI-RQb"/>
+                <constraint firstItem="BYn-Og-DuG" firstAttribute="centerY" secondItem="xPv-Ab-A4D" secondAttribute="centerY" id="j7u-wf-RtI"/>
+                <constraint firstItem="ZUp-Am-ZDc" firstAttribute="centerX" secondItem="xPv-Ab-A4D" secondAttribute="centerX" id="kYD-Y1-slT"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Xvc-ON-oyK"/>
+                    <exclude reference="iQ3-dI-RQb"/>
+                    <exclude reference="j7u-wf-RtI"/>
+                    <exclude reference="Nhf-ge-byX"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="240" y="338"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plusIcon" width="128" height="128"/>
+    </resources>
+</document>
