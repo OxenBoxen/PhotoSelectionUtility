@@ -64,7 +64,6 @@
 				C806B4CD1BD5828100232455 /* PhotoSelectionUtility */,
 				C806B4C51BD57F3C00232455 /* Main */,
 				C806B4C61BD57F4200232455 /* Flow */,
-				C806B4C71BD57F4B00232455 /* View */,
 				C806B4BA1BD57F3300232455 /* Assets.xcassets */,
 				C806B4AE1BD57F3300232455 /* Supporting Files */,
 			);
@@ -98,13 +97,6 @@
 				C806B4CA1BD5810000232455 /* LandingViewController.xib */,
 			);
 			name = Flow;
-			sourceTree = "<group>";
-		};
-		C806B4C71BD57F4B00232455 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		C806B4CD1BD5828100232455 /* PhotoSelectionUtility */ = {
@@ -328,6 +320,7 @@
 				C806B4C41BD57F3300232455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
