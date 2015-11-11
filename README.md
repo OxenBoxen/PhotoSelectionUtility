@@ -44,7 +44,7 @@ After a user selects a photo from UIImagePicker, or takes a photo using the came
 
 which will return to you the image!
 
-Library is supported for iOS7+
+Library is supported for iOS7+ for Objective-C, iOS8+ for Swift !
 
 This tool was developed with the intention of helping to keep your ViewControllers light! 
 
