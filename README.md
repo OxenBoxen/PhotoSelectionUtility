@@ -7,6 +7,8 @@ Use PhotoSelectionUtility as a drop in library when having to deal with users ta
 
 Make sure the ViewController where you are using PhotoSelectionUtility conforms to the `PhotoSelectionUtilityDelegate` protocol.
 
+## Objective-c
+
 To start the photo selection flow, just call: 
 
 `- (void)submitUserPhotoFromViewController:(UIViewController *)vc` on the `PhotoSelectionUtility` object.
@@ -24,9 +26,23 @@ After a user selects a photo from UIImagePicker, or takes a photo using the came
 
 `- (void)photoSelectionUtilityDidReturnImage:(UIImage *)image;`
 
-which will return to you the image! 
+which will return to you the image!
 
-## Objective-c
+
+## Swift
+
+
+```
+@IBAction func addImageTapped(sender: AnyObject) {
+    photoSelectionUtility.submitUserPhotoFromViewController(self)
+}
+```
+
+After a user selects a photo from UIImagePicker, or takes a photo using the camera, this delegate method gets fired:
+
+`func photoSelectionUtilityDidReturnImage(image: UIImage);`
+
+which will return to you the image!
 
 Library is supported for iOS7+
 
